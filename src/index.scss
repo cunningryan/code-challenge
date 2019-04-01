@@ -1,0 +1,74 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.card-area {
+  text-align: center;
+
+  .single-card {
+    margin-bottom: 1.5rem;
+  }
+
+  h1,
+  h2,
+  p {
+    font-weight: 400;
+  }
+}
+
+.featurette {
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.featurette-heading {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  margin-top: 0;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+footer {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 480px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  .featurette {
+    margin-top: 7rem;
+  }
+
+  .featurette-heading {
+    margin-top: 2rem;
+  }
+}
