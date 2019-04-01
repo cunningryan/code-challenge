@@ -64,7 +64,7 @@ const Carousel = () => {
   const [slideId, setSlideId] = useState(1);
 
   return (
-    <div className="carousel slide" data-ride="carousel">
+    <div className="carousel slide">
       <ol className="carousel-indicators">
         {carouselItems.map(item => (
           <li

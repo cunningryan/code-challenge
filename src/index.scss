@@ -1,5 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -14,7 +20,14 @@
   height: 32rem;
 }
 
+.carousel-caption p {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
 .carousel {
+  margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
@@ -35,6 +48,8 @@
 .featurette {
   margin-top: 0;
   margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .featurette-heading {
