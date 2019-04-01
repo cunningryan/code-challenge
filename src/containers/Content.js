@@ -36,8 +36,9 @@ const featuretteInfo = [
 const Content = () => (
   <div className="container marketing content-area">
     <div className="row card-area">
-      {cardInfo.map(card => (
+      {cardInfo.map((card, id) => (
         <Card
+          key={id}
           title={card.title}
           content={card.content}
           buttonText={card.buttonText}
@@ -46,6 +47,7 @@ const Content = () => (
     </div>
     {featuretteInfo.map((featurette, id) => (
       <Featurette
+        key={id}
         title={featurette.title}
         subtitle={featurette.subtitle}
         content={featurette.content}

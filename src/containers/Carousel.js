@@ -68,6 +68,7 @@ const Carousel = () => {
       <ol className="carousel-indicators">
         {carouselItems.map(item => (
           <li
+            key={item.id}
             onClick={() => setSlideId(item.id)}
             className={`${slideId === item.id ? "active" : ""}`}
           />
@@ -75,7 +76,12 @@ const Carousel = () => {
       </ol>
       <div className="carousel-inner">
         {carouselItems.map(item => (
-          <CarouselItem id={item.id} active={slideId} content={item.content} />
+          <CarouselItem
+            key={item.id}
+            id={item.id}
+            active={slideId}
+            content={item.content}
+          />
         ))}
       </div>
       <a

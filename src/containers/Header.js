@@ -25,8 +25,9 @@ const Header = () => {
         </button>
         <div className={`collapse navbar-collapse ${showNav ? "show" : ""}`}>
           <ul className="navbar-nav mr-auto" onClick={() => setShowNav(false)}>
-            {navLinks.map(linkObj => (
+            {navLinks.map((linkObj, id) => (
               <NavItem
+                key={id}
                 title={linkObj.title}
                 link={linkObj.link}
                 active={linkObj.active}
