@@ -1,13 +1,10 @@
 import React from "react";
 
-// ${ active > id ? "carousel-item-prev" : "" }
-// ${ active < id ? "carousel-item-next" : "" }
-
 const CarouselItem = ({ id, content, active }) => (
   <div
-    className={`carousel-item ${id === active ? "active" : ""}${
-      active > id ? " carousel-item-prev" : ""
-    }${active < id ? " carousel-item-next" : ""}
+    className={`carousel-item ${id === active ? "active" : ""}
+    ${active > id ? " carousel-item-prev" : ""}
+    ${active < id ? " carousel-item-next" : ""}
   `}
     style={{
       transform: `translateX(${(id - active) * 100}%)`
