@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="#">
           Carousel
         </a>
         <button className="navbar-toggler" onClick={() => setShowNav(!showNav)}>
